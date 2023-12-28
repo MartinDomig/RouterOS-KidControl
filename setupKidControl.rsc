@@ -24,6 +24,8 @@
 /system script run epochTime
 /system script run calcRate
 /system script run checkConfig
+/system script run onArpUpdate
+
 
 /system scheduler
 add interval=1m name=checkConfig on-event="/system script run checkConfig" start-time=startup
